@@ -1,0 +1,24 @@
+name: spring2
+spring:
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+    generate-unique-name: false
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    open-in-view: false
+
+logging:
+  level:
+    root: warn
+    jpabook.jpashop.study.springboot: trace
