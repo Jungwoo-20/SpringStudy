@@ -20,7 +20,7 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final ItemService itemService;
 
-    public Long Order(Long memberid, Long itemId, int quantity) {
+    public Long order(Long memberid, Long itemId, int quantity) {
         Member member = memberRepository.findOne(memberid);
         Item item = itemService.findOne(itemId);
         Delivery delivery = new Delivery();
