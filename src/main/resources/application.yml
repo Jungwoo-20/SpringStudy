@@ -9,6 +9,8 @@ spring:
     password:
     driver-class-name: org.h2.Driver
     generate-unique-name: false
+  mustache:
+    suffix: .html
   jpa:
     hibernate:
       ddl-auto: create
