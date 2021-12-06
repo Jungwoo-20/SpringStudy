@@ -1,4 +1,4 @@
-package jpabook.jpashop.web;
+package jpabook.jpashop.form;
 
 import lombok.Getter;
 import lombok.Setter;
